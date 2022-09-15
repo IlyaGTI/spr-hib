@@ -13,6 +13,15 @@ public class Customer {
     @OneToOne(mappedBy = "customer")
     private Project project;
 
+    public Customer() {
+    }
+
+    public Customer(Long id, String name, Project project) {
+        this.id = id;
+        this.name = name;
+        this.project = project;
+    }
+
     public Long getId() {
         return id;
     }

@@ -16,6 +16,15 @@ public class Position {
     @JoinColumn(name = "empl_id")
     private Set<Employee> employees;
 
+    public Position() {
+    }
+
+    public Position(Long id, String name, Set<Employee> employees) {
+        this.id = id;
+        this.name = name;
+        this.employees = employees;
+    }
+
     public Long getId() {
         return id;
     }

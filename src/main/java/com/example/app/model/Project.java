@@ -21,6 +21,16 @@ public class Project {
 
     private String name;
 
+    public Project() {
+    }
+
+    public Project(Long id, Customer customer, Set<Employee> employees, String name) {
+        this.id = id;
+        this.customer = customer;
+        this.employees = employees;
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

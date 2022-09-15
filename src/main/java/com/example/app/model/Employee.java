@@ -29,6 +29,14 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(Long id, String name, String surname, Position position, Set<Project> projects) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.position = position;
+        this.projects = projects;
+    }
+
 
     public Long getId() {
         return id;
